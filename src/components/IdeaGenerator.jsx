@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Wand2, Lightbulb } from "lucide-react";
+import IdeaGeneratorDemo from "./IdeaGeneratorDemo";
 
 const suggestionBank = [
   {
@@ -60,6 +61,8 @@ export default function IdeaGenerator() {
             Describe your design idea and get a creative direction instantly.
           </p>
         </motion.div>
+
+        <IdeaGeneratorDemo />
 
         <motion.form
           initial={{ opacity: 0, y: 20 }}
